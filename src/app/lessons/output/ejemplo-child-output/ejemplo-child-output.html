@@ -1,0 +1,20 @@
+<div class="cont">
+    <P>Componente hijo Ejemplo &#64;Output</P>
+    <!-- <p>Login</p> -->
+    <p>Ingresa el nombre de usuario que quieres buscar</p>
+    <input type="text" [(ngModel)]='userName'>
+    <button (click)="setSearchUser()">Buscar</button>
+
+    @if (userSearch) {
+    <p>
+        Usuario encontrado: {{userSearch}}
+    </p>
+    }@else if (!userSearch) {
+    <p>Usuario no encontrado</p>
+    }
+
+    <div class="card flex justify-center">
+        <p-selectbutton [options]='levels' [(ngModel)]='selectLevel'></p-selectbutton>
+    </div>
+    <p> El rol seleccionado es: {{selectLevel}}</p>
+</div>

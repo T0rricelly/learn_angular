@@ -1,0 +1,13 @@
+<!-- DataBiding -->
+<h2>Nombre de usuario {{userName}}</h2>
+<input type="text" [value]= "userName">
+
+
+<!-- DoubleDataBiding -->
+<h2>Nombre de usuario {{userName}}</h2>
+<input type="text" [(ngModel)]="userName"> 
+
+
+<!-- Event Binding -->
+<h2>Number {{number}}</h2>
+<button (click)="addOne()">Sumar 1</button>
