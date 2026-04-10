@@ -8,6 +8,9 @@ import { EjemploChildOutput } from '../ejemplo-child-output/ejemplo-child-output
   styleUrl: './ejemplo-father-output.css',
 })
 export class EjemploFatherOutput {
-  userName: string = ''
+  role: string = ''
 
+  setRole(eventRole: string){
+    this.role = eventRole;
+  }
 }

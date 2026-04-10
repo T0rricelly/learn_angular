@@ -1,5 +1,5 @@
 <div class="hero">
     <p>Componente padre Output</p>
-    <p>Bienvenido {{userName}}</p>
-    <ejemplo-child-output></ejemplo-child-output>
+    <p>Bienvenido {{role}}</p>
+    <ejemplo-child-output (sendRole)="setRole($event)"></ejemplo-child-output>
 </div>
