@@ -1,0 +1,5 @@
+<h2>Componente Calculadora</h2>
+<app-formulario (result)="setResult($event)" ></app-formulario>
+@if (result) {
+    <p>El resultado de la suma es {{result}}</p>
+}

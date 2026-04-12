@@ -1,0 +1,10 @@
+<div class="form">
+    <p>Bienvenido a la calculadora</p>
+    <form >
+        <label for="">Operando</label>
+        <input type="number" [(ngModel)]="operOne" name="operOne">
+        <label for="">Operador</label>
+        <input type="number" [(ngModel)]="operTwo" name="operTwo">
+        <button type="submit" (click)="add(operOne,operTwo)">Sumar</button>
+    </form>
+</div>

@@ -8,11 +8,15 @@ import { EjemploFather } from './lessons/input/ejemplo-father/ejemplo-father';
 import { EjemploFatherSignal } from './lessons/input-signal/ejemplo-father-signal/ejemplo-father-signal';
 import { EjemploChildOutput } from './lessons/output/ejemplo-child-output/ejemplo-child-output';
 import { EjemploFatherOutput } from './lessons/output/ejemplo-father-output/ejemplo-father-output';
+import { Calculadora } from './lessons/output/example/calculadora/calculadora';
+import { ExampleViewChild } from './lessons/view-child/example/example-view-child/example-view-child';
+import { ViewChildChild } from "./lessons/view-child/example-component/view-child-child/view-child-child";
+import { ViewChildFather } from "./lessons/view-child/example-component/view-child-father/view-child-father";
 
 @Component({
   selector: 'app-root', 
   standalone: true,
-  imports: [ EjemploIf, EjemploDataBinding, EjemploFor, EjemploForObjetos, EjemploFather, EjemploFatherSignal, EjemploFatherOutput],
+  imports: [EjemploIf, EjemploDataBinding, EjemploFor, EjemploForObjetos, EjemploFather, EjemploFatherSignal, EjemploFatherOutput, Calculadora, ExampleViewChild, ViewChildFather],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
