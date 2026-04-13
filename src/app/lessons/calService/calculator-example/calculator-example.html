@@ -1,0 +1,25 @@
+<div class="d-flex  justify-content-between mt-4 ">
+    <div class=" ms-5">
+        <h2>Calculadora</h2>
+        <input type="number" [(ngModel)]="operOne" class="mb-4 bg-light text-black rounded">
+        <br>
+        <input type="number" [(ngModel)]="operTwo" class="mb-4 bg-light text-black rounded">
+        <br>
+        <p>El resultado es: {{result}}</p>
+        <button (click)="sumar()" class="btn btn-primary me-2">Sumar</button>
+        <button (click)="show = !show"  class="btn btn-success me-2">Ver historial</button>
+        <button (click)="cleanHistory()" class="btn btn-danger ">Limpiar historial</button>
+    </div>
+    <div class="d-flex row justify-content-between align-items-center bg-light me-4 border">
+        @if (show) {
+            @if(historyList.length > 0) {
+                <p>Historial de busqueda</p>
+                @for (item of historyList; track $index) {
+                    <p>{{$index + 1}}. {{item}}</p>
+                }
+            }@else {
+                <p>El historial esta vacio</p>
+            }
+        }
+    </div>
+</div>

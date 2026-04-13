@@ -12,11 +12,12 @@ import { Calculadora } from './lessons/output/example/calculadora/calculadora';
 import { ExampleViewChild } from './lessons/view-child/example/example-view-child/example-view-child';
 import { ViewChildChild } from "./lessons/view-child/example-component/view-child-child/view-child-child";
 import { ViewChildFather } from "./lessons/view-child/example-component/view-child-father/view-child-father";
+import { CalculatorExample } from "./lessons/calService/calculator-example/calculator-example";
 
 @Component({
   selector: 'app-root', 
   standalone: true,
-  imports: [EjemploIf, EjemploDataBinding, EjemploFor, EjemploForObjetos, EjemploFather, EjemploFatherSignal, EjemploFatherOutput, Calculadora, ExampleViewChild, ViewChildFather],
+  imports: [EjemploIf, EjemploDataBinding, EjemploFor, EjemploForObjetos, EjemploFather, EjemploFatherSignal, EjemploFatherOutput, Calculadora, ExampleViewChild, ViewChildFather, CalculatorExample],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
