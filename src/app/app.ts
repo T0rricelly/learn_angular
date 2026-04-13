@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { EjemploIf } from "./lessons/if/ejemplo-if/ejemplo-if";
 import { EjemploDataBinding } from './lessons/data-binding/ejemplo-data-binding/ejemplo-data-binding';
 import { EjemploFor } from "./lessons/for/ejemplo-for/ejemplo-for";
@@ -13,11 +13,12 @@ import { ExampleViewChild } from './lessons/view-child/example/example-view-chil
 import { ViewChildChild } from "./lessons/view-child/example-component/view-child-child/view-child-child";
 import { ViewChildFather } from "./lessons/view-child/example-component/view-child-father/view-child-father";
 import { CalculatorExample } from "./lessons/calService/calculator-example/calculator-example";
+import { Home } from './components/home/home';
 
 @Component({
   selector: 'app-root', 
   standalone: true,
-  imports: [EjemploIf, EjemploDataBinding, EjemploFor, EjemploForObjetos, EjemploFather, EjemploFatherSignal, EjemploFatherOutput, Calculadora, ExampleViewChild, ViewChildFather, CalculatorExample],
+  imports: [EjemploIf, EjemploDataBinding, EjemploFor, EjemploForObjetos, EjemploFather, EjemploFatherSignal, EjemploFatherOutput, Calculadora, ExampleViewChild, ViewChildFather, CalculatorExample, RouterOutlet, Home],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
